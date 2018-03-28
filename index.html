@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Tim's Fantastic Slot Machine</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="gold">
+            <h1>Tim's Fantastic Luck Machine</h1>
+            <div id="luckyNumber"></div>
+            <div class="moneyDisplay">
+                <h2>Balance</h2>
+                <div id="moneyBalance" class="money"></div>
+            </div>
+            <div class="moneyDisplay">
+                <h2>You won!</h2>
+                <div id="moneyWon" class="money"></div>
+            </div>
+        </div>
+        <button id="playBtn" onclick="PlaySlots()">PLAY</button>
+        <button class="moneyBtn" onclick="AddQuarters(1)">Add $0.25</button>
+        <button class="moneyBtn" onclick="AddQuarters(4)">Add $1.00</button>
+        <button class="moneyBtn" onclick="AddQuarters(20)">Add $5.00</button>
+    </div>
+</body>
+</html>
